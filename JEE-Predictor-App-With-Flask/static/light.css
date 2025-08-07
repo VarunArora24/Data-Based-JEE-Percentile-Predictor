@@ -1,0 +1,28 @@
+body{
+    background-image: url(bg-light.png);
+    color: rgb(0, 0, 0);
+}
+
+
+option{
+    background-color: #E6EEF5;
+    color: rgb(0, 0, 0);
+}
+
+
+.container {
+    background-color: #E6EEF5;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container input,
+.container select{
+    background-color: #E6EEF5;
+    border: 1px solid #3193F5;
+    color: rgb(0, 0, 0);
+}
+
+.container button {
+    background-color: #3193F5;
+    color: rgb(0, 0, 0);
+}

@@ -1,0 +1,29 @@
+body{
+    background-image: url(bg-dark.png);
+    color: white;
+}
+
+
+option{
+    background-color: #0C1F3C;
+    color: white;
+}
+
+
+.container {
+    background-color: #0C1F3C;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container input,
+.container select{
+    background-color: #04235095;
+    border: blue;
+    color: white;
+    border: 0.8px solid #013389;
+}
+
+.container button {
+    background-color: #2979FF;
+    color: white;
+}

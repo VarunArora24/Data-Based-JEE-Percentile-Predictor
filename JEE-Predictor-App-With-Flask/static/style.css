@@ -1,0 +1,71 @@
+body{
+    background-repeat: no-repeat;
+    background-size: 100%;
+    font-family: 'Segoe UI', 'Helvetica Neue', sans-serif;
+}
+
+.title_jee{
+    font-size: 2cm;
+    text-align: center;
+}
+
+option{
+    border: none;
+    outline: none;
+}
+.main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+    margin-top: 1.4cm;   
+    font-size: 0.78cm;
+}
+.left_container,
+.right_container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1;
+}
+
+.container {
+    padding: 30px;
+    border-radius: 10px;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
+    width: 20cm;
+    height: auto; /* better than fixed height */
+    display: flex;
+    flex-direction: row; /* <-- make it side-by-side */
+    gap: 40px;
+    justify-content: space-between;
+}
+
+.container input,
+.container select{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+.submitbtn{
+    cursor: pointer;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    outline: none;
+}
+.theme-toggle{
+    width: 1.3cm;
+    height: 1.3cm;
+    background-color: none;
+    font-size: 0.5cm;
+    cursor: pointer;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}

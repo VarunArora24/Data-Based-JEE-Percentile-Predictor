@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JEE Percentile Predictor</title>
+    <link id="theme-link" rel="stylesheet" href="{{ url_for('static', filename='light.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    
+
+</head>
+
+<body>
+    <div class="main_container">
+    <div class="title_jee">JEE Percentile Predictor</div>
+    <form method="post" action="/predict" class="container">
+        <div class="left_container">
+            <div class="date_select">Select Date</div>
+            <select name="date" id="date_select">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <div class="shift_select">Select Shift</div>
+            <select name="shift" id="shift_select">
+                <option value="morning_shift">Shift 1</option>
+                <option value="evening_shift">Shift 2</option>
+            </select>
+            <button type="button" class="theme-toggle" onclick="toggleTheme()" id="theme-toggle">🌙</button>
+        </div>
+        <div class="right_container">
+            <div class="enter_marks">Enter Marks</div>
+            <input type="number"id="marks" name="marks" placeholder="Enter Marks">
+            <div class="enter_phone">Enter Phone Number</div>
+            <input type="number" id="phone" name="phone" placeholder="Phone Number">
+            <div class="enter_email">Enter Email</div>
+            <input type="email" name="email" placeholder="Enter Email">
+            <button class="submitbtn" type="submit" onclick="return validateForm()">Submit</button>
+        </div>
+    </form>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+
+</html>
